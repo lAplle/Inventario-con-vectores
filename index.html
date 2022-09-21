@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+    </style>
+    <title>ICV</title>
+</head>
+<body>
+    <div style="text-align: center;">
+        <h1>Inventario con vectores</h1>
+        <div id="contenido" class="row">
+            <div>
+                <form id="nuevo-producto">
+                    <h3>Datos del producto</h3>
+                    <div>
+                        <label>Nombre:</label>
+                        <div>
+                            <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Nombre Producto">
+                        </div>
+                    </div>
+                    <div>
+                        <label><br>Código:</label>
+                        <div>
+                            <input type="number" id="codigo" name="codigo" class="form-control"  placeholder="Codigo">
+                        </div>
+                    </div>
+                    <div>
+                        <label><br>Costo:</label>
+                        <div>
+                            <input type="number" id="costo" name="costo" class="form-control"  placeholder="Costo">
+                        </div>
+                    </div>
+                    <div>
+                        <label><br>Cantidad:</label>
+                        <div>
+                            <input type="number" id="cantidad" name="cantidad" class="form-control">
+                        </div>
+                    </div>
+                    <div><br>
+                            <button type="submit">Añadir Producto</button>
+                </form>
+            </div>
+            <div>
+                <label><br>Codigo</label>
+                <div>
+                    <input type="text" id="eliminar-input">
+                    <button id="eliminar">Eliminar</button>
+                </div>
+            </div><br>
+            <div>
+                <div>
+                    <button id="buscar">Buscar</button>
+                </div><br>
+            </div>
+            <div>
+                <div>
+                    <button id="listar">Listar (Actualizar)</button>
+                </div><br>
+            </div>
+            <div>
+                <div>
+                    <button id="listar-inverso">Listar Inverso</button>
+                </div>
+            </div>
+            </div>
+            <div>
+                <h1 id="administra">Listado de productos</h1>
+                <ul id="productos" class="list-group"></ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
